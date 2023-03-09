@@ -11,8 +11,6 @@ RUN go mod verify
 
 COPY . .
 
-# Force the go compiler to use modules
-ENV GO111MODULE=on
 RUN go test
 RUN go build -o /bin/postfix_exporter
 
