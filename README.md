@@ -1,6 +1,6 @@
 # Prometheus Postfix exporter
 
-Prometheus metrics exporter for [the Postfix mail server](http://www.postfix.org/).
+A Prometheus metrics exporter for [the Postfix mail server](http://www.postfix.org/).
 This exporter provides histogram metrics for the size and age of messages stored in
 the mail queue. It extracts these metrics from Postfix by connecting to
 a UNIX socket under `/var/spool`. It also counts events by parsing Postfix's
