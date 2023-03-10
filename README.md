@@ -59,3 +59,10 @@ an option to build the exporter without systemd. Use the build tag `nosystemd`.
 ```
 go build -tags nosystemd
 ```
+
+## Docker image
+
+Build the docker image with
+```shell
+docker build -t eldada.jfrog.io/docker/postfix-exporter:0.1 .
+```
