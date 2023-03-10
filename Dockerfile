@@ -18,4 +18,6 @@ FROM debian:stable-slim
 EXPOSE 9154
 WORKDIR /
 COPY --from=builder /bin/postfix_exporter /bin/
-ENTRYPOINT ["/bin/postfix_exporter"]
+COPY --from=builder /src/run-exporter.sh /bin/
+
+ENTRYPOINT ["/bin/run-exporter.sh"]
