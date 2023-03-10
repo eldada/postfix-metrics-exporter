@@ -14,7 +14,7 @@ COPY . .
 RUN go test
 RUN go build -o /bin/postfix_exporter
 
-FROM debian:stable-slim
+FROM ubuntu:22.10
 EXPOSE 9154
 WORKDIR /
 COPY --from=builder /bin/postfix_exporter /bin/
