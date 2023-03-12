@@ -64,5 +64,5 @@ go build -tags nosystemd
 
 Build the docker image with
 ```shell
-docker build -t eldada.jfrog.io/docker/postfix-exporter:0.1 .
+docker build -t eldada.jfrog.io/docker/postfix-exporter:0.2 .
 ```
