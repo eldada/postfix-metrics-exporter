@@ -64,5 +64,9 @@ go build -tags nosystemd
 
 Build the docker image with
 ```shell
-docker build -t eldada.jfrog.io/docker/postfix-exporter:0.2 .
+# Local build for local usage
+docker build -t postfix-exporter:local .
+
+# Multi arch build and push
+docker buildx build --platform linux/amd64,linux/arm64 -t eldada.jfrog.io/docker/postfix-exporter:0.2 . --push
 ```
