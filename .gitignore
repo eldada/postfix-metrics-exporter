@@ -6,7 +6,7 @@
 *.test
 
 # Binaries
-postfix_exporter
+postfix-metrics-exporter
 
 *.iml
 vendor/

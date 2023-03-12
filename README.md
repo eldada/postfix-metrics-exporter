@@ -9,7 +9,7 @@ the systemd journal, the Docker logs, or from a log file.
 
 ## Options
 
-These options can be used when starting the `postfix_exporter`
+These options can be used when starting the `postfix-metrics-exporter`
 
 | Flag                     | Description                                          | Default                           |
 |--------------------------|------------------------------------------------------|-----------------------------------|
